@@ -1,0 +1,123 @@
+﻿<Window x:Class="WpfApp6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp6"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="1000">
+    <Grid>
+        
+        <DockPanel>
+
+            <Button Background="White" FontSize="32" Width="450" DockPanel.Dock="Left">
+
+                <StackPanel  Margin="0,70,370,00" >
+
+                    <Border CornerRadius="50" Width="50" Height="50" Margin="10" Background="Red">
+                        <Label Content="ES" BorderThickness="0" Background="Transparent"/>
+                    </Border>
+                    <Border CornerRadius="50" Width="50" Height="50" Margin="10" Background="Orange">
+                        <Label Content="AS" BorderThickness="0" Background="Transparent"/>
+                    </Border>
+                    <Border CornerRadius="50" Width="50" Height="50" Margin="10" Background="Yellow">
+                        <Label Content="MA" BorderThickness="0" Background="Transparent"/>
+                    </Border>
+                    <Border CornerRadius="50" Width="50" Height="50" Margin="10" Background="DeepSkyBlue">
+                        <Label Content="ES" BorderThickness="0" Background="Transparent"/>
+                    </Border>
+                    <Border CornerRadius="50" Width="50" Height="50" Margin="10" Background="DeepPink">
+                        <Label Content="OP" BorderThickness="0" Background="Transparent"/>
+                    </Border>
+                    <Border CornerRadius="50" Width="50" Height="50" Margin="10" Background="Blue">
+                        <Label Content="MB" BorderThickness="0" Background="Transparent"/>
+                    </Border>
+                    <Border CornerRadius="50" Width="50" Height="50" Margin="10" Background="HotPink">
+                        <Label Content="NP" BorderThickness="0" Background="Transparent"/>
+                    </Border>
+                    <Border CornerRadius="50" Width="50" Height="50" Margin="10" Background="BlueViolet">
+                        <Label Content="DJ" BorderThickness="0" Background="Transparent"/>
+                    </Border>
+
+                </StackPanel>
+            </Button>
+           
+            <Button Background="White" FontSize="22" Width="60" DockPanel.Dock="Right"></Button>
+            <Button Background="White" FontSize="22" Height="60" DockPanel.Dock="Bottom">
+                <TextBox Height="60" Width="470" FontSize="20" Text="    White a message..."></TextBox> 
+            </Button>
+            <Button Background="White" FontSize="22" Height="60" DockPanel.Dock="Top">
+                <TextBox Height="60" Width="470" FontSize="20" Text="Eva Summe &#xA;online"></TextBox>
+                
+            </Button>
+
+            <Button Background="Gray">1</Button>
+
+           
+        </DockPanel>
+        <StackPanel Margin="10,80,490,0">
+            <TextBox Height="60" Width="360"  FontSize="20" Margin="5" Background="Blue"  Text="Eva Summer                                11:00&#xA;Reminds me of a Chinese prover..." />
+            <TextBox Height="60" Width="360"  FontSize="20" Margin="5" Background="Azure" Text="Alexandra Smith                            10:00&#xD;&#xA;This is amazing                                 2" />
+            <TextBox Height="60" Width="360"  FontSize="20" Margin="5" Background="Azure" Text="Mikke Apple                                    9:00&#xA;       Sticker                                          2                      " />
+            <TextBox Height="60" Width="360"  FontSize="20" Margin="5" Background="Azure" Text="Evening Club                                    8:00&#xD;&#xA;Eva: Photo" />
+            <TextBox Height="60" Width="360"  FontSize="20" Margin="5" Background="Azure" Text="Old Pirates                                       7:00&#xD;&#xA;Max: Yo-ho-ho" />
+            <TextBox Height="60" Width="360"  FontSize="20" Margin="5" Background="Azure" Text="Max Bright                                         6:00&#xD;&#xA;How about some coffe?" />
+            <TextBox Height="60" Width="360"  FontSize="20" Margin="5" Background="Azure" Text="Natali Parker                                    5:00&#xD;&#xA;Ok, great)"/>
+            <TextBox Height="60" Width="360"  FontSize="20" Margin="5" Background="Azure" Text="Davy Jones                                       4:00&#xD;&#xA;Keynote.pdf" />
+        </StackPanel>
+        <Label Content="Search"  Height="50" Width="340" Background="LightGray" FontSize="30" Margin="60,0,550,550"/>
+        <StackPanel Margin="0,30,900,500">
+            <Grid Height="4" Width="40" Background="Black" Margin="3"></Grid>
+            <Grid Height="4" Width="40" Background="Black" Margin="3"></Grid>
+            <Grid Height="4" Width="40" Background="Black" Margin="3"></Grid>
+        </StackPanel>
+
+
+        <!--<Grid >
+
+            <Grid.ColumnDefinitions >
+                <ColumnDefinition Width="600" ></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <StackPanel Margin="0,160,540,0">
+
+
+                <Ellipse Height="50" Width="50" Margin="5" Fill="Orange"></Ellipse>
+                <Ellipse Height="50" Width="50" Margin="5" Fill="GreenYellow"></Ellipse>
+                <Ellipse Height="50" Width="50" Margin="5" Fill="Green"></Ellipse>
+                <Ellipse Height="50" Width="50" Margin="5" Fill="CadetBlue"></Ellipse>
+                <Ellipse Height="50" Width="50" Margin="5" Fill="Blue"></Ellipse>
+                <Ellipse Height="50" Width="50" Margin="5" Fill="BlueViolet"></Ellipse>
+                <Ellipse Height="50" Width="50" Margin="5" Fill="Purple"></Ellipse>
+            </StackPanel>
+            
+            
+            <Button Content="AS" Height="35" Width="35" FontSize="20" FontWeight="Bold" Background="Orange"  Margin="0,115,540,320" BorderBrush="Orange" BorderThickness="3"></Button>
+            <Button Content="MA" Height="36" Width="38" FontSize="19" FontWeight="Bold" Background="GreenYellow"  Margin="0,115,540,200" BorderBrush="GreenYellow" BorderThickness="3"></Button>
+            <Button Content="EC" Height="35" Width="35" FontSize="20" FontWeight="Bold" Background="Green"  Margin="0,135,540,100" BorderBrush="Green" BorderThickness="3"></Button>
+            <Button Content="OP" Height="35" Width="35" FontSize="20" FontWeight="Bold" Background="CadetBlue"  Margin="0,255,540,100" BorderBrush="CadetBlue" BorderThickness="3"></Button>
+            <Button Content="MB" Height="35" Width="35" FontSize="19" FontWeight="DemiBold" Background="Blue"  Margin="0,375,540,100" BorderBrush="Blue" BorderThickness="3"></Button>
+            <Button Content="NP" Height="35" Width="35" FontSize="20" FontWeight="Bold" Background="BlueViolet"  Margin="0,455,540,60" BorderBrush="BlueViolet" BorderThickness="3"></Button>
+            <Button Content="DJ" Height="35" Width="35" FontSize="20" FontWeight="Bold" Background="Purple"  Margin="0,515,540,0" BorderBrush="Purple" BorderThickness="3"></Button>
+
+            <Label Height="30" Width="500" Margin="80,0,300,200" FontSize="19" FontWeight="Bold">Alexsandra Smith</Label>
+            <Label Height="40" Width="500" Margin="80,0,200,150" FontSize="20" FontWeight="Bold">This is amazing</Label>
+            <Label Height="30" Width="60" Margin="430,0,0,210" FontSize="19" FontWeight="Bold">10:00</Label>
+            <Ellipse Height="30" Width="30" Margin="430,10,0,160" Fill="Blue"></Ellipse>
+            <Label Height="30" Width="60" Margin="465,0,00,160" FontSize="19" FontWeight="Bold">2</Label>
+
+            <Label Height="30" Width="500" Margin="80,100,30,200" FontSize="19" FontWeight="Bold">Mike Apple</Label>
+            <Label Height="30" Width="60" Margin="430,100,0,200" FontSize="19" FontWeight="Bold">9:00</Label>
+            <Label Height="30" Width="500" Margin="80,150,40,200" FontSize="19" FontWeight="Bold">Sticker</Label>
+            <Ellipse Height="30" Width="30" Margin="430,10,0,50" Fill="Gray"></Ellipse>
+            <Label Height="30" Width="60" Margin="465,0,00,50" FontSize="19" FontWeight="Bold">2</Label>
+        </Grid>
+        <Grid  Height="70" Width="550" Background="Blue" Margin="0,0,440,330">
+            <Button Height="30" Width="50" Margin="460,0,0,40" FontSize="20" Background="Blue">11:00</Button>
+            <Ellipse Height="50" Width="50" Margin="0,0,500,00" Fill="Red" ></Ellipse>
+            <Button Content="ES" Height="35" Width="35" FontSize="20" FontWeight="Bold" Background="Red"  Margin="0,0,500,0" BorderBrush="Red" BorderThickness="3"></Button>
+            <Button Content="Eva Summer" Height="30" Width="350" Background="Blue" FontSize="20" FontWeight="Bold"  Margin="40,0,40,40"></Button>
+            <Button Content="Reminds me of e Chinese prover..." Height="30" Width="350" Background="Blue" FontSize="20" Margin="40,40,40,0"></Button>
+        </Grid>-->
+    </Grid>
+</Window>
